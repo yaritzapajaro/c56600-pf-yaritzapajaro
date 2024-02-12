@@ -1,0 +1,189 @@
+/*
+1rem 16px
+2rem 32px
+0.5rem 8px
+
+em
+font size: 24px;
+1rem 24px
+1.5rem 18px
+
+Tamaños
+width: Ancho
+Height: Alto
+*/
+
+/*Reset*/
+
+*{
+    font-family: 'quicksand' , sans-serif;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+    background-color: #fadf75;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 0.3fr;
+    grid-template-areas: 
+    "header  header  header  header"
+    "main    main     main    main"
+    "section  section section section"
+    "footer   footer   footer  footer";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px; 
+    color: #333; 
+}
+
+.h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em
+}
+
+.h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+}
+
+.h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+}
+
+.h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+}
+
+.h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+    color: #666; /* Color de texto gris */
+}
+
+
+    
+
+.navbar {
+    background-image: url(../assets/fondo.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0%;
+    background-color: #fadf75;
+}
+
+.navbar--barra {
+    background-color: #fadf75;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar--barra nav {
+    background-color: #fadf75;
+}
+
+.navbar--barra nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+.navbar--barra nav ul li {
+    list-style: none;
+}
+
+.navbar--barranav ul li a {
+    text-decoration: solid;
+    color: #333;
+}
+
+.cont-logo {
+    width: 100px;
+    padding: 1rem;
+}
+
+.cont-logo img {
+    width: 200%;
+}
+
+
+.navbar--banner {
+    background-image: url(../assets/fondo.jpg);
+    height: 20rem;
+}
+
+.menu-color {
+    background-color: #b8860b;
+    display: inline-block;
+    text-align: end;
+}
+
+nav {
+    text-align: center;
+    position: fixed; /* Fija el menú en la ventana del navegador */
+    top: 0; 
+    right: 0; /* Coloca el menú en la parte derecha */
+    background-color: #333; /* Color de fondo del menú */
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+
+}
+
+footer ul li {
+    display: inline;
+    margin-inline-end: 20px;
+    text-decoration: none;
+}
+
+
+
